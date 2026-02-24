@@ -81,6 +81,9 @@ async function init() {
             types_container.appendChild(type_button)
         })
     }
+    if (info_active) {
+        loadTypes(poke_types);
+    }
 
     InfoMovesBox = document.getElementById("info-moves-box");
     function getInfo(poke_data) {
